@@ -1,0 +1,44 @@
+.fsf-zoller-compare {
+    margin-bottom: 10px !important;
+    padding: 50px;
+    padding-bottom: 15px;
+}
+
+.fsf-zoller-compare .container {
+    max-width: 1260px;
+}
+
+.fsf-zoller-compare h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.fsf-zoller-compare p {
+    font-weight: bold;
+    margin-bottom:0;
+}
+
+.fsf-zoller-compare p.grey {
+    font-weight: normal;
+    color:#9D9D9D;
+}
+
+.fsf-zoller-compare .row {
+    margin-bottom: 35px;
+}
+
+@media (max-width: 1200px) {
+    .fsf-zoller-compare {
+        margin-bottom: 10px;
+        padding: 50px;
+        padding-bottom: 65px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .fsf-zoller-compare .container {
+        padding: 0;
+    }
+}

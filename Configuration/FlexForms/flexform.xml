@@ -21,69 +21,60 @@
                             </config>
                         </TCEforms>
                     </settings.headline>
-                    <settings.text>
-                    <TCEforms>
-                            <label>Unterüberschrift</label>
-                            <config>
-                                <type>input</type>
-                                <eval>trim</eval>
-                                <size>230</size>
-                            </config>
-                        </TCEforms>
-                    </settings.text>
-                    <settings.buttontext1>
-                        <TCEforms>
-                            <label>Buttontext</label>
-                            <config>
-                                <type>input</type>
-                                <eval>trim</eval>
-                                <size>30</size>
-                            </config>
-                        </TCEforms>
-                    </settings.buttontext1>
-                    <settings.url1>
-                        <TCEforms>
-                            <label>Buttonlink</label>
-                            <config>
-                                <type>input</type>
-                                <size>50</size>
-                                <max>256</max>
-                                <eval>trim</eval>
-                                <renderType>inputLink</renderType>
-                                <softref>typolink</softref>
-                            </config>
-                        </TCEforms>
-                    </settings.url1>
-                    <settings.img1>
-						<TCEforms>
-							<label>Hintergrund Bild</label>
-							<config>										
-								<type>group</type>
-								<internal_type>file</internal_type>
-								<allowed>gif, jpg,jpeg,png,csv</allowed>
-								<max_size>10000</max_size>
-								<uploadfolder>uploads/tx_fsfzollerheader</uploadfolder>
-								<maxitems>1</maxitems>
-								<size>1</size>
-								<selectedliststyle>Width:180px</selectedliststyle>
-							</config>
-						</TCEforms>
-					</settings.img1>
-                    <settings.video>
-							<TCEforms>
-								<label>Video/Animation</label>
-								<config>
-									<type>group</type>
-									<internal_type>file</internal_type>
-									<allowed>mp4</allowed>
-									<max_size>10000</max_size>
-									<uploadfolder>uploads/tx_fsfzollerheader</uploadfolder>
-									<maxitems>1</maxitems>
-									<size>1</size>
-									<selectedliststyle>Width:180px</selectedliststyle>
-								</config>
-							</TCEforms>
-						</settings.video>
+                    <settings.references>
+                        <section>1</section>
+                        <type>array</type>
+                        <el>
+                            <item>
+                                <type>array</type>
+                                <title></title>
+                                <el>
+                                    <headline1>
+                                        <TCEforms>
+                                            <label>Titel linke Spalte</label>
+                                            <config>
+                                                <type>input</type>
+                                                <eval>trim</eval>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </headline1>
+                                    <text1>
+                                        <TCEforms>
+                                            <label>grauer Beschreibungstext linke Spalte</label>
+                                            <config>
+                                                <type>text</type>
+                                                <rows>5</rows>
+                                                <cols>30</cols>
+                                                <eval>trim</eval>
+                                            </config>
+                                        </TCEforms>
+                                    </text1>
+                                    <headline2>
+                                        <TCEforms>
+                                            <label>Titel rechte Spalte</label>
+                                            <config>
+                                                <type>input</type>
+                                                <eval>trim</eval>
+                                                <size>30</size>
+                                            </config>
+                                        </TCEforms>
+                                    </headline2>
+                                    <text2>
+                                        <TCEforms>
+                                            <label>grauer Beschreibungstext rechte Spalte</label>
+                                            <config>
+                                                <type>text</type>
+                                                <rows>5</rows>
+                                                <cols>30</cols>
+                                                <eval>trim</eval>
+                                            </config>
+                                        </TCEforms>
+                                    </text2>
+                                </el>
+                            </item>
+                        </el>
+                    </settings.references>
                 </el>
             </ROOT>
         </sheet1>

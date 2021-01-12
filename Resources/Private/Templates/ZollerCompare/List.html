@@ -1,36 +1,35 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
-
-This Template is responsible for creating a table of domain objects.
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        List.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
-
-<f:section name="content">
-    <h1>Listing for ZollerCompare</h1>
-
-    <f:flashMessages />
-
-    <table  class="tx_fsfzollercompare" >
-        <tr>
-            <th> </th>
-            <th> </th>
-        </tr>
-
-        <f:for each="{zollerCompares}" as="zollerCompare">
-            <tr>
-                <td><f:link.action action="edit" arguments="{zollerCompare : zollerCompare}">Edit</f:link.action></td>
-                <td><f:link.action action="delete" arguments="{zollerCompare : zollerCompare}">Delete</f:link.action></td>
-            </tr>
+<div class="fsf-zoller-compare">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>{settings.headline}</h1>
+            </div>
+        </div>
+        
+        <f:for
+            each="{settings.references}"
+            as="reference"
+            key="key"
+            iteration="iterator"
+        >
+            <div class="row">
+                <div class="col-6">
+                    <p>{reference.item.headline1}</p>
+                    <f:if condition="{reference.item.text1}">
+                        <p class="grey">
+                            {reference.item.text1}
+                        </p>
+                    </f:if>
+                </div>
+                <div class="col-6">
+                    <p>{reference.item.headline2}</p>
+                    <f:if condition="{reference.item.text2}">
+                        <p class="grey">
+                            {reference.item.text2}
+                        </p>
+                    </f:if>
+                </div>
+            </div>
         </f:for>
-    </table>
-
-    <f:link.action action="new">New ZollerCompare</f:link.action>
-</f:section>
-</html>
+    </div>
+</div>

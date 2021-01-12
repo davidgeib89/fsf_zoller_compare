@@ -57,3 +57,15 @@ plugin.tx_fsfzollercompare._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+
+
+page{
+	includeCSS{
+		fsfzollercomparecss =  EXT:fsf_zoller_compare/Resources/Public/css/fsf_zoller_compare.css
+      
+	}
+	includeJSFooterlibs {
+        fsfzollercomparejs =  EXT:fsf_zoller_compare/Resources/Public/js/main.js
+    }
+}
