@@ -29,6 +29,23 @@
     margin-bottom: 35px;
 }
 
+.fsf-zoller-compare .wrapper {
+    position: relative;
+}
+
+.fsf-zoller-compare .wrapper p {
+    display:inline-block;
+}
+
+.fsf-zoller-compare .wrapper .info-popover {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+
+
+
 @media (max-width: 1200px) {
     .fsf-zoller-compare {
         margin-bottom: 10px;

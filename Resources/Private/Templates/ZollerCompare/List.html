@@ -14,7 +14,12 @@
         >
             <div class="row">
                 <div class="col-6">
-                    <p>{reference.item.headline1}</p>
+                    <div class="wrapper">
+                        <p>{reference.item.headline1}</p>
+                        <f:if condition="{reference.item.info1}">
+                            <div class="info-popover" data-toggle="popover"  data-content="{reference.item.info1}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
+                        </f:if>
+                    </div>
                     <f:if condition="{reference.item.text1}">
                         <p class="grey">
                             {reference.item.text1}
@@ -22,7 +27,12 @@
                     </f:if>
                 </div>
                 <div class="col-6">
-                    <p>{reference.item.headline2}</p>
+                    <div class="wrapper">
+                        <p>{reference.item.headline2}</p>
+                        <f:if condition="{reference.item.info1}">
+                            <div class="info-popover" data-toggle="popover" data-content="{reference.item.info2}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
+                        </f:if>
+                    </div>
                     <f:if condition="{reference.item.text2}">
                         <p class="grey">
                             {reference.item.text2}

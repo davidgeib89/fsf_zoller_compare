@@ -50,6 +50,17 @@
                                             </config>
                                         </TCEforms>
                                     </text1>
+                                    <info1>
+                                        <TCEforms>
+                                            <label>Infobutton Text linke Spalte</label>
+                                            <config>
+                                                <type>text</type>
+                                                <rows>5</rows>
+                                                <cols>30</cols>
+                                                <eval>trim</eval>
+                                            </config>
+                                        </TCEforms>
+                                    </info1>
                                     <headline2>
                                         <TCEforms>
                                             <label>Titel rechte Spalte</label>
@@ -71,6 +82,17 @@
                                             </config>
                                         </TCEforms>
                                     </text2>
+                                    <info2>
+                                        <TCEforms>
+                                            <label>Infobutton Text rechte Spalte</label>
+                                            <config>
+                                                <type>text</type>
+                                                <rows>5</rows>
+                                                <cols>30</cols>
+                                                <eval>trim</eval>
+                                            </config>
+                                        </TCEforms>
+                                    </info2>
                                 </el>
                             </item>
                         </el>
