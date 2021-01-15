@@ -41,7 +41,7 @@ call_user_func(
 			$iconRegistry->registerIcon(
 				'fsf_zoller_compare-plugin-zollercompare',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:fsf_zoller_compare/Resources/Public/Icons/user_plugin_zollercompare.svg']
+				['source' => 'EXT:fsf_zoller_compare/Resources/Public/Icons/zoller_z.svg']
 			);
 		
     }
