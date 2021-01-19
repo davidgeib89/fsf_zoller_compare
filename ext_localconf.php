@@ -24,7 +24,7 @@ call_user_func(
                     elements {
                         zollercompare {
                             iconIdentifier = fsf_zoller_compare-plugin-zollercompare
-                            title = LLL:EXT:fsf_zoller_compare/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_compare_zollercompare.name
+                            title = Compare
                             description = LLL:EXT:fsf_zoller_compare/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_compare_zollercompare.description
                             tt_content_defValues {
                                 CType = list
