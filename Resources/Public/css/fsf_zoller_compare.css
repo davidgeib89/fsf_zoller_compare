@@ -1,14 +1,18 @@
 .fsf-zoller-compare {
-    margin-bottom: 10px !important;
+    margin-bottom: 150px !important;
     padding: 50px;
     padding-bottom: 15px;
+}
+
+.fsf-zoller-compare.nodistance {
+    margin-bottom: 0!important;
 }
 
 .fsf-zoller-compare .container {
     max-width: 1260px;
 }
 
-.fsf-zoller-compare h1 {
+.fsf-zoller-compare h2 {
     font-size: 2rem;
     border-bottom: 1px solid #dadada;
     padding-bottom: 10px;

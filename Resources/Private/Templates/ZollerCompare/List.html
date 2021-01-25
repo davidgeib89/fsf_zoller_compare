@@ -1,8 +1,8 @@
-<div class="fsf-zoller-compare">
+<div class="fsf-zoller-compare {f:if(condition: '{settings.distance} == \'nodistance\'', then: 'nodistance')}">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>{settings.headline}</h1>
+                <h2>{settings.headline}</h2>
             </div>
         </div>
         
@@ -17,7 +17,7 @@
                     <div class="wrapper">
                         <p>{reference.item.headline1}</p>
                         <f:if condition="{reference.item.info1}">
-                            <div class="info-popover" data-toggle="popover"  data-content="{reference.item.info1}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
+                            <div class="info-popover" data-toggle="popover" data-trigger="hover"  data-content="{reference.item.info1}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
                         </f:if>
                     </div>
                     <f:if condition="{reference.item.text1}">
@@ -29,8 +29,8 @@
                 <div class="col-6">
                     <div class="wrapper">
                         <p>{reference.item.headline2}</p>
-                        <f:if condition="{reference.item.info1}">
-                            <div class="info-popover" data-toggle="popover" data-content="{reference.item.info2}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
+                        <f:if condition="{reference.item.info2}">
+                            <div class="info-popover" data-toggle="popover" data-trigger="hover" data-content="{reference.item.info2}"><img src="/typo3conf/ext/fsf_zoller_compare/Resources/Public/Icons/info.png" class="info-icon"></div>
                         </f:if>
                     </div>
                     <f:if condition="{reference.item.text2}">
